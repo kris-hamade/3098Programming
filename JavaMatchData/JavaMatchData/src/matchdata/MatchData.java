@@ -3,7 +3,7 @@ package matchdata;
 public class MatchData implements MatchDataInterface{
     int teamNumber;
     int matchNumber;
-    AllianceColor allianceColor;
+    AllianceColor teamcolor;
 
     public enum AllianceColor{RED, BLUE};
 
@@ -29,18 +29,18 @@ public class MatchData implements MatchDataInterface{
 
     public AllianceColor getAllianceColor()
     {
-        return this.allianceColor;
+        return this.teamcolor;
     }
 
-    public void setAllianceColor(AllianceColor alliancecolor)
+    public void setAllianceColor(AllianceColor allianceColor)
     {
-        this.allianceColor = alliancecolor;
+        this.teamcolor = allianceColor;
     }
 
     public void printMatchData()
     {
         System.out.println("Team Number is: " + this.getTeamNumber());
-        System.out.println("Team Number is: " + this.getMatchNumber());
-        System.out.println("Team Number is: " + this.getAllianceColor());
+        System.out.println("Match Number is: " + this.getMatchNumber());
+        System.out.println("Alliance Color is: " + this.getAllianceColor());
     }
 }

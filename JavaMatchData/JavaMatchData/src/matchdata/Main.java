@@ -9,8 +9,8 @@ public class Main {
         MatchData matchData3 = new MatchData();
         MatchData matchData4 = new MatchData();
 
-        AllianceColor redTeam = AllianceColor.RED;
-        AllianceColor blueTeam = AllianceColor.BLUE;
+        /* AllianceColor redTeam = AllianceColor.RED;
+        AllianceColor blueTeam = AllianceColor.BLUE; */
     }
     
 

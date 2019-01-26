@@ -15,6 +15,6 @@ public interface MatchDataInterface {
 
     public AllianceColor getAllianceColor();
 
-    public void setAllianceColor(AllianceColor alliancecolor);
+    public void setAllianceColor(AllianceColor allianceColor);
 
 }
