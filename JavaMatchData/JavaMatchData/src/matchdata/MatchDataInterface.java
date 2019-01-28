@@ -18,25 +18,25 @@ public interface MatchDataInterface {
 
     public void printMatchData();
 
-    public boolean getFieldLeftRocketLeftLevel1Cargo();
+    public void getFieldLeftRocketLeftLevel1Cargo();
 
     public void setFieldLeftRocketLeftLevel1Cargo(boolean state);
 
-    public boolean getFieldLeftShipCenterCargo();
+    public void getFieldLeftShipCenterCargo();
 
     public void setFieldLeftShipCenterCargo(boolean state);
 
-    public boolean getFieldLeftShipLeft1Cargo();
+    public void getFieldLeftShipLeft1Cargo();
 
     public void setFieldLeftShipLeft1Cargo(boolean state);
 
-    public boolean getFieldLeftShipLeft2Panel();
+    public void getFieldLeftShipLeft2Panel();
 
     public void setFieldLeftShipLeft2Panel(boolean state);
 
-    public int incrementFieldLeftRocketCenterLevel2Cargo(boolean state);
+    public int incrementFieldLeftRocketCenterLevel2Cargo();
 
-    public int decrementFieldLeftRocketCenterLevel2Cargo(boolean state);
+    public int decrementFieldLeftRocketCenterLevel2Cargo();
 
     public int getFieldLeftRocketCenterLevel2Cargo();
 }
