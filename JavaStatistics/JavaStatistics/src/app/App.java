@@ -9,12 +9,9 @@ public class App {
         
         Scanner input = new Scanner(System.in);
         int count = 0;
-        //String collectInput;
-
 
         double[] numbers = new double[count];
-       
-       
+
 
             do{
                 
