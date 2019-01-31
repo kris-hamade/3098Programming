@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeManagement.Service", "ASP_Testing\TimeManagement.Service.csproj", "{F78058B1-E0A5-4A1C-9C6D-17DDF73D1D0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeManagement.Data", "TimeManagement.Data\TimeManagement.Data.csproj", "{637413EB-91BB-424A-8ADB-8CBD07BF1530}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F78058B1-E0A5-4A1C-9C6D-17DDF73D1D0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F78058B1-E0A5-4A1C-9C6D-17DDF73D1D0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F78058B1-E0A5-4A1C-9C6D-17DDF73D1D0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F78058B1-E0A5-4A1C-9C6D-17DDF73D1D0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{637413EB-91BB-424A-8ADB-8CBD07BF1530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{637413EB-91BB-424A-8ADB-8CBD07BF1530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{637413EB-91BB-424A-8ADB-8CBD07BF1530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{637413EB-91BB-424A-8ADB-8CBD07BF1530}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {792953BB-3B68-4854-8587-410DDA4BEA8B}
+	EndGlobalSection
+EndGlobal
