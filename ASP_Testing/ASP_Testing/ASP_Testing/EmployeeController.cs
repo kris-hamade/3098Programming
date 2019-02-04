@@ -19,11 +19,13 @@ namespace TimeManagement.Service
             this.employeeProvider = employeeProvider;
         }
 
+       
+
         // GET: api/Employee
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Employee> Get()
         {
-            return new string[] { "value1", "value2" };
+            return employeeProvider.Get();
         }
 
         // GET: api/Employee/5

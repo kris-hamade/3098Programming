@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP_CORE_TEST", "ASP_CORE_TEST\ASP_CORE_TEST.csproj", "{081565BF-05E2-41D1-8064-DB6F8A9A47E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCOUTING_TEST", "SCOUTING_TEST\SCOUTING_TEST.csproj", "{7D580604-1C43-4E13-A55C-FCCE826BE55C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{081565BF-05E2-41D1-8064-DB6F8A9A47E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{081565BF-05E2-41D1-8064-DB6F8A9A47E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{081565BF-05E2-41D1-8064-DB6F8A9A47E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D580604-1C43-4E13-A55C-FCCE826BE55C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D580604-1C43-4E13-A55C-FCCE826BE55C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D580604-1C43-4E13-A55C-FCCE826BE55C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D580604-1C43-4E13-A55C-FCCE826BE55C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

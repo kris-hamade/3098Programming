@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using TimeManagement.Data;
 
-namespace ASP_Testing
+namespace SCOUTING_TEST
 {
     public class Startup
     {
@@ -33,8 +33,6 @@ namespace ASP_Testing
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
-            services.AddTransient<IEmployeeProvider>(f => new EmployeeProvider(@"Persist Security Info = False;  Integrated Security = true; Initial Catalog = TimeManagement; server = Desktop-\SQLEXPRESS2017"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,8 +45,10 @@ namespace ASP_Testing
             else
             {
                 app.UseExceptionHandler("/Error");
+                app.UseHsts();
             }
 
+            app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
