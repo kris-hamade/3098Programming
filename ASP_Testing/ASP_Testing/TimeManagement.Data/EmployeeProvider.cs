@@ -14,7 +14,7 @@ namespace TimeManagement.Data
         {
             this.connectionString = connectionString;
         } 
-
+        
         public IEnumerable<Employee> Get()
         {
             IEnumerable<Employee> employee = null;

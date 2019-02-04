@@ -6,5 +6,8 @@ namespace TimeManagement.Data
 {
     public interface IEmployeeProvider
     {
+        IEnumerable<Employee> Get();
+
+
     }
 }
