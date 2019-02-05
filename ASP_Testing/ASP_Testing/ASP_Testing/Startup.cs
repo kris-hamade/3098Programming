@@ -34,7 +34,7 @@ namespace ASP_Testing
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddTransient<IEmployeeProvider>(f => new EmployeeProvider(@"Persist Security Info = False;  Integrated Security = true; Initial Catalog = TimeManagement; server = Desktop-\SQLEXPRESS2017"));
+            services.AddTransient<IEmployeeProvider>(f => new EmployeeProvider(@"Persist Security Info = False;  Integrated Security = true; Initial Catalog = TimeManagement; server = DESKTOP-7KPSPNT\MSSQLSERVER2017"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
