@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -34,7 +35,11 @@ namespace ASP_Testing
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddTransient<IEmployeeProvider>(f => new EmployeeProvider(@"Persist Security Info = False;  Integrated Security = true; Initial Catalog = TimeManagement; server = DESKTOP-7KPSPNT\MSSQLSERVER2017"));
+            var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json");
+
+            var config = builder.Build();
+
+            services.AddTransient<IEmployeeProvider>(f => new EmployeeProvider(config["ConfigurationString:TimeManagement"]));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

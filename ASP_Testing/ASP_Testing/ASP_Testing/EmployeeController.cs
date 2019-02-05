@@ -14,7 +14,7 @@ namespace TimeManagement.Service
     {
         private readonly IEmployeeProvider employeeProvider;
 
-        public EmployeeController(IEmployeeProvider employeeProvider)
+        public EmployeeController(IEmployeeProvider employeeProvider, IEmployeeProcessor employeeProcessor)
         {
             this.employeeProvider = employeeProvider;
         }
@@ -37,8 +37,9 @@ namespace TimeManagement.Service
 
         // POST: api/Employee
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody]Employee employee)
         {
+            EmployeeProcessor.Create() 
         }
 
         // PUT: api/Employee/5
